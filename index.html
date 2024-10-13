@@ -78,6 +78,43 @@
             background: #6b8e23;
             transform: scale(1.08);
         }
+        .registration-form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #202020;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .registration-form input[type="text"],
+        .registration-form input[type="password"],
+        .registration-form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 4px;
+            background: #333;
+            color: #f3f3f3;
+        }
+        .registration-form label {
+            color: #daa520;
+            font-weight: bold;
+        }
+        .registration-form button {
+            width: 100%;
+            padding: 12px;
+            background: #556b2f;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .registration-form button:hover {
+            background: #6b8e23;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
@@ -114,6 +151,30 @@
             <a href="#">Скачать лаунчер</a>
             <a href="#">Беседа</a>
         </div>
+    </div>
+    <div class="registration-form">
+        <h2>Регистрация</h2>
+        <form action="#" method="POST">
+            <label for="username">Придумайте логин:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Придумайте пароль:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirm-password">Повторите пароль:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            
+            <label for="email">Введите E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <div>
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">Я полностью ознакомлен и принимаю <a href="#">пользовательское соглашение</a>, а также даю свое согласие на <a href="#">обработку персональных данных</a>.</label>
+            </div>
+            
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        <p>Уже есть аккаунт? <a href="#">Авторизация</a></p>
     </div>
     <footer>
         <p>&copy; 2024 RarityClient. Все права защищены.</p>
