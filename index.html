@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RarityClient</title>
+    <title>Личный кабинет - RarityClient</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Основные стили */
         body {
             font-family: Arial, sans-serif;
-            background: #6b8e23;
+            background: #181818;
             color: #f3f3f3;
             margin: 0;
             padding: 0;
         }
         header {
-            background: #4b5320;
+            background: #2b2b2b;
             padding: 10px 0;
+            text-align: center;
         }
         nav ul {
             list-style-type: none;
             padding: 0;
-            text-align: center;
         }
         nav ul li {
             display: inline;
@@ -36,27 +35,48 @@
         nav ul li a:hover {
             color: #daa520;
         }
-        section {
-            padding: 50px;
-            text-align: center;
-        }
-        /* Вкладка Пользователь */
-        .user-info-card {
-            background: #556b2f;
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
             padding: 20px;
-            border-radius: 10px;
+            background: #202020;
+            border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin: 20px auto;
-            width: 300px;
-            text-align: left;
-            transition: transform 0.3s, box-shadow 0.3s;
         }
-        .user-info-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        .user-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
-        .user-info-card h3 {
+        .user-info div {
+            background: #333;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .user-info div span.label {
+            font-weight: bold;
             color: #daa520;
+        }
+        .button-group {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .button-group a {
+            display: inline-block;
+            background: #556b2f;
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 8px;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .button-group a:hover {
+            background: #6b8e23;
+            transform: scale(1.08);
         }
     </style>
 </head>
@@ -64,30 +84,37 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#features">Функции</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#contact">Контакты</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#download">Скачать</a></li>
-                <li><a href="#user">Пользователь</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="#">Скачать</a></li>
+                <li><a href="#">Поддержка</a></li>
             </ul>
         </nav>
     </header>
-    <section id="home">
-        <h1>Добро пожаловать на RarityClient</h1>
-        <p>Это главная страница вашего клиента Rarity. Здесь вы можете найти всю необходимую информацию и обновления о клиенте.</p>
-    </section>
-    <section id="user">
-        <h2>Информация о пользователе</h2>
-        <div class="user-info-card">
-            <h3>Пользователь</h3>
-            <p><strong>UID:</strong> 12345</p>
-            <p><strong>Имя:</strong> Иван Иванов</p>
-            <p><strong>Группа:</strong> Пользователь</p>
-            <p><strong>Дата окончания лицензии:</strong> 31.12.2024</p>
+    <div class="container">
+        <h1>Личный кабинет</h1>
+        <div class="user-info">
+            <div><span class="label">UID:</span> <span>121957</span></div>
+            <div><span class="label">Логин:</span> <span>Ukraine1488</span></div>
+            <div><span class="label">Группа:</span> <span>Пользователь</span></div>
+            <div><span class="label">Дата регистрации:</span> <span>20.05.2024 17:26</span></div>
+            <div><span class="label">Последний вход:</span> <span>10.10.2024 23:11</span></div>
+            <div><span class="label">E-mail:</span> <span>brawlstars2024001@gmail.com</span></div>
+            <div><span class="label">HWID:</span> <span>f52dda8c1c77a58574d8ecd0371eb7100ce5817c</span></div>
+            <div><span class="label">Клиент куплен до:</span> <span>19.01.2038 00:00</span></div>
+            <div>
+                <span class="label">Активация ключа:</span> 
+                <input type="text" placeholder="Введите ключ">
+                <button>Активировать</button>
+            </div>
         </div>
-    </section>
+        <div class="button-group">
+            <a href="#">Мои промокоды</a>
+            <a href="#">Купленные товары</a>
+            <a href="#">Скачать лаунчер</a>
+            <a href="#">Беседа</a>
+        </div>
+    </div>
     <footer>
         <p>&copy; 2024 RarityClient. Все права защищены.</p>
     </footer>
