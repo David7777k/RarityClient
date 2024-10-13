@@ -6,6 +6,7 @@
     <title>RarityClient</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Основные стили */
         body {
             font-family: Arial, sans-serif;
             background: #6b8e23;
@@ -39,70 +40,23 @@
             padding: 50px;
             text-align: center;
         }
-        .download-button {
-            background: #daa520;
-            color: #fff;
-            padding: 15px 25px;
-            text-decoration: none;
-            font-size: 1.2em;
-            border-radius: 10px;
-            transition: background 0.3s, transform 0.3s;
-        }
-        .download-button:hover {
-            background: #b8860b;
-            transform: scale(1.05);
-        }
-        footer {
-            background: #4b5320;
-            padding: 20px;
-            text-align: center;
-        }
-        footer ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        footer ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        footer ul li a {
-            color: #f3f3f3;
-            text-decoration: none;
-        }
-        .feature-card {
+        /* Вкладка Пользователь */
+        .user-info-card {
             background: #556b2f;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin: 20px;
-            display: inline-block;
-            width: 250px;
+            margin: 20px auto;
+            width: 300px;
             text-align: left;
             transition: transform 0.3s, box-shadow 0.3s;
         }
-        .feature-card:hover {
+        .user-info-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
         }
-        .feature-card h3 {
+        .user-info-card h3 {
             color: #daa520;
-        }
-        .button-group {
-            margin-top: 30px;
-        }
-        .button-group a {
-            display: inline-block;
-            background: #556b2f;
-            color: #fff;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 8px;
-            margin: 8px;
-            transition: background 0.3s, transform 0.3s;
-        }
-        .button-group a:hover {
-            background: #6b8e23;
-            transform: scale(1.08);
         }
     </style>
 </head>
@@ -116,68 +70,26 @@
                 <li><a href="#contact">Контакты</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#download">Скачать</a></li>
+                <li><a href="#user">Пользователь</a></li>
             </ul>
         </nav>
     </header>
     <section id="home">
         <h1>Добро пожаловать на RarityClient</h1>
         <p>Это главная страница вашего клиента Rarity. Здесь вы можете найти всю необходимую информацию и обновления о клиенте.</p>
-        <div class="button-group">
-            <a href="#features">Изучить функции</a>
-            <a href="#download">Скачать сейчас</a>
-        </div>
     </section>
-    <section id="features">
-        <h2>Функции</h2>
-        <div class="feature-card">
-            <h3>Кастомные моды</h3>
-            <p>Уникальные модификации для Minecraft, которые улучшают игровой процесс и добавляют новые возможности.</p>
+    <section id="user">
+        <h2>Информация о пользователе</h2>
+        <div class="user-info-card">
+            <h3>Пользователь</h3>
+            <p><strong>UID:</strong> 12345</p>
+            <p><strong>Имя:</strong> Иван Иванов</p>
+            <p><strong>Группа:</strong> Пользователь</p>
+            <p><strong>Дата окончания лицензии:</strong> 31.12.2024</p>
         </div>
-        <div class="feature-card">
-            <h3>Визуальные стили</h3>
-            <p>Уникальные визуальные стили и анимации для лучшего восприятия интерфейса.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Автоматические обновления</h3>
-            <p>Получайте последние обновления клиента автоматически, без лишних усилий.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Оптимизация FPS</h3>
-            <p>Повышение FPS и оптимизация работы Minecraft для плавного игрового процесса.</p>
-        </div>
-    </section>
-    <section id="about">
-        <h2>О RarityClient</h2>
-        <p>RarityClient — это мощный клиент для Minecraft, предназначенный для улучшения игрового процесса с помощью уникальных функций, кастомных визуальных элементов и многого другого. Наша цель — предоставить пользователям гибкий и увлекательный способ играть в Minecraft, с функциями, такими как кастомные моды, расширенные настройки и удобный пользовательский интерфейс.</p>
-        <p>Мы активно работаем над новыми функциями и регулярно выпускаем обновления, чтобы сделать ваш опыт использования RarityClient еще лучше.</p>
-    </section>
-    <section id="contact">
-        <h2>Контакты</h2>
-        <p>Если у вас есть вопросы, отзывы или вам нужна поддержка, свяжитесь с нами:</p>
-        <ul>
-            <li>Email: <a href="mailto:support@rarityclient.com">support@rarityclient.com</a></li>
-            <li>Discord: <a href="https://discord.gg/rarityclient">Присоединяйтесь к нашему сообществу в Discord</a></li>
-            <li>Twitter: <a href="https://twitter.com/rarityclient">Следите за нами в Twitter</a></li>
-        </ul>
-    </section>
-    <section id="faq">
-        <h2>FAQ</h2>
-        <h3>Как установить RarityClient?</h3>
-        <p>Вы можете скачать установочный файл с нашего сайта, затем следовать инструкциям на экране для установки клиента.</p>
-        <h3>Где я могу найти инструкции по использованию функций?</h3>
-        <p>В нашем Discord-сообществе и на странице Wiki на GitHub вы можете найти подробные инструкции и гайды по использованию всех функций RarityClient.</p>
-    </section>
-    <section id="download">
-        <h2>Скачать RarityClient</h2>
-        <p>Нажмите на кнопку ниже, чтобы скачать последнюю версию RarityClient и начать наслаждаться улучшенным игровым процессом.</p>
-        <a href="https://rarityclient.com/download" class="download-button">Скачать RarityClient</a>
     </section>
     <footer>
         <p>&copy; 2024 RarityClient. Все права защищены.</p>
-        <ul>
-            <li><a href="https://twitter.com/rarityclient">Twitter</a></li>
-            <li><a href="https://youtube.com/rarityclient">YouTube</a></li>
-        </ul>
     </footer>
 </body>
 </html>
